@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { ClerkProvider } from "@clerk/nextjs";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/Navbar';
+import { ClerkProvider } from '@clerk/nextjs';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev Social Media App",
-  description: "Social media app built with Next.js",
+  title: 'Lama Dev Social Media App',
+  description: 'Social media app built with Next.js'
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -20,12 +20,10 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <div className="w-full bg-white px-4 md:px-8 lg:px-16 xl:px32 2xl:px-64">
+          <div className="xl:px32 w-full bg-white px-4 md:px-8 lg:px-16 2xl:px-64">
             <Navbar />
           </div>
-          <div className="w-full bg-slate-100 px-4 md:px-8 lg:px-16 xl:px32 2xl:px-64">
-            {children}
-          </div>
+          <div className="xl:px32 w-full bg-slate-100 px-4 md:px-8 lg:px-16 2xl:px-64">{children}</div>
         </body>
       </html>
     </ClerkProvider>

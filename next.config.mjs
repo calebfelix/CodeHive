@@ -2,8 +2,8 @@
 const nextConfig = {
   experimental: {
     reactCompiler: true,
-    ppr: "incremental",
-  },
+    ppr: 'incremental'
+  }
 };
 
 export default nextConfig;
