@@ -9,7 +9,7 @@ const Navbar = () => {
       {/* LEFT */}
       <div className="w-[20%] md:hidden lg:block">
         <Link href="/" className="text-xl font-bold text-blue-600">
-          LAMASOCIAL
+          CodeHive
         </Link>
       </div>
       {/* CENTER */}

@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/jsx-runtime', 'airbnb', 'next', 'prettier'],
+  extends: ['plugin:react/jsx-runtime', 'next', 'prettier'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
